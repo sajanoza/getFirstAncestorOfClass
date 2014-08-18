@@ -1,7 +1,7 @@
 function getFirstAncestorOfClass(domObject,className){
 	//console.log("chcecked object type is node object: "+domObject.tagName);
-	if (typeof(className) != String){
-		var error1 = new TypeError("className is invalid, string expected");
+	if (typeof(className) != 'string'){
+		var error1 = new TypeError("className type is invalid. Its"+typeof(className));
 		throw error1;
 		}
 	if (domObject.nodeName == "undefined" || domObject.nodeName == null){
